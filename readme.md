@@ -1,4 +1,3 @@
-I will generate a README file for the repository `urvashitech/DomainRadar-`. I will include sections such as the project title, description, installation instructions, usage, contribution guidelines, and license information.
 
 ```markdown name=README.md
 # DomainRadar
