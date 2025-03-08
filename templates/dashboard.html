@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Radar - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .search-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .filters-container {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .table-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="d-flex justify-content-between align-items-center">
+            <input type="text" class="form-control me-2" placeholder="Search for companies, investors, and more">
+            <button class="btn btn-primary">🔍</button>
+        </div>
+        <small class="text-muted">Example: AI startups in North America that got funding in the last 30 days</small>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-container">
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary">Overview ✖</span>
+            <span class="badge bg-primary">Contacts ✖</span>
+            <span class="badge bg-primary">Signals (New) ✖</span>
+            <span class="badge bg-primary">Financials ✖</span>
+            <span class="badge bg-secondary">Company Status ✖</span>
+            <span class="badge bg-secondary">Notes, Lists, Tags ✖</span>
+            <button class="btn btn-outline-secondary btn-sm">Clear All</button>
+        </div>
+    </div>
+
+    <!-- Results Table -->
+    <div class="table-container">
+        <div class="d-flex justify-content-between">
+            <h5>1-5 of 375 results</h5>
+            <div>
+                <button class="btn btn-warning btn-sm">Save Search</button>
+                <button class="btn btn-outline-primary btn-sm">Connect to CRM</button>
+                <button class="btn btn-outline-secondary btn-sm">Export</button>
+            </div>
+        </div>
+
+        <table class="table table-hover mt-3">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col"><input type="checkbox"></th>
+                    <th scope="col">Organization Name</th>
+                    <th scope="col">Headquarters Location</th>
+                    <th scope="col">Last Funding Type</th>
+                    <th scope="col">Last Funding Date</th>
+                    <th scope="col">Industries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Indigo</td>
+                    <td>New York, USA</td>
+                    <td>Seed</td>
+                    <td>Jan 23, 2025</td>
+                    <td>Artificial Intelligence (AI)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Positron</td>
+                    <td>Reno, Nevada, USA</td>
+                    <td>Seed</td>
+                    <td>Feb 11, 2025</td>
+                    <td>Artificial Intelligence (AI)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Pipeshift</td>
+                    <td>San Francisco, California, USA</td>
+                    <td>Seed</td>
+                    <td>Jan 23, 2025</td>
+                    <td>Artificial Intelligence (AI)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
